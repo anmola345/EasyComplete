@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:adnroid="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pre_qrscanner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PreQRScanner">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who's Data Would You Like to Give?"
+        android:textSize="50dp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Cobalt"
+        android:id="@+id/title"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anmol Agrawal"
+        android:layout_below="@+id/title"
+        android:id="@+id/inputName"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkName"
+        android:text="Submit Name"
+        android:layout_below="@+id/inputName"/>
+
+
+</RelativeLayout>
